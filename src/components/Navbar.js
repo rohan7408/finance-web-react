@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const handleClick = () => setClick(!click);
   return (
-    <div className="header">
+    <div className="header" id="header">
       <nav className="navbar">
         <a href="/" className="logo">
           <img src={logo} alt="logo" sizes={10} />
@@ -22,16 +22,16 @@ const Navbar = () => {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <a href="/">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li className="nav-item">
-            <a href="/">About</a>
+            <a href="#about">About</a>
           </li>
           <li className="nav-item">
-            <a href="/">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
           <li className="nav-item">
-            <a href="/">Demo</a>
+            <a href="#demo">Demo</a>
           </li>
         </ul>
       </nav>
